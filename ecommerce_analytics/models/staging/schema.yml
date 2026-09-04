@@ -1,0 +1,27 @@
+version: 2
+
+models:
+  - name: stg_orders
+    description: "Cleaned staging model for orders."
+
+    columns:
+      - name: order_id
+        description: "Unique id of the order"
+        data_tests:
+          - unique
+          - not_null
+
+      - name: customer_id
+        description: "Customer id"
+        data_tests:
+          - not_null
+
+      - name: order_date
+        description: "Date when the order was placed"
+        data_tests:
+          - not_null
+
+      - name: net_sales
+        description: "Net sales amount"
+        data_tests:
+          - not_null

@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: raw
+    description: Raw source data loaded into BigQuery.
+    database: astrafy-takehome-507112
+    schema: raw
+
+    tables:
+      - name: orders
+        description: One row per order.
+
+      - name: sales
+        description: One row per product within an order

@@ -1,0 +1,47 @@
+version: 2
+
+models:
+  - name: fct_orders
+    description: "Fact table containing one row per order with customer, sales, product quantity and order segmentation information"
+
+    columns:
+      - name: order_id
+        description: "Unique id of the order"
+        data_tests:
+          - unique
+          - not_null
+             
+             
+
+      - name: customer_id
+        description: "Unique customer id "
+        data_tests:
+          - not_null
+              
+              
+
+      - name: order_date
+        description: "Date of the order was placed "
+        data_tests:
+          - not_null
+             
+             
+
+      - name: qty_products
+        description: "Total number of products per order"
+        data_tests:
+          - not_null
+          
+              
+              
+
+      - name: net_sales
+        description: "Net sale per order"
+        data_tests:
+          - not_null
+          
+              
+      - name: order_segmentation
+        description: "Customer segment based on the previous 12 months of order history."
+        data_tests:
+          - not_null

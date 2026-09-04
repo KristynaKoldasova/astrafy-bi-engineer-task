@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: int_order_products
+    description: "Aggregates the total quantity of products for unique order"
+
+    columns:
+      - name: order_id
+        description: "Unique id of the order"
+        data_tests:
+          - unique
+          - not_null
+
+      - name: qty_products
+        description: "Total quantity of products per order"
+        data_tests:
+          - not_null
