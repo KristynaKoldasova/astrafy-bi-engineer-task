@@ -179,15 +179,21 @@ The dashboard includes:
 ### Dashboard Link:
 https://datastudio.google.com/s/tfpatsWgkYQ 
 
-## Bonus : Sales Forecast
+## Bonus – Sales Forecast
 
-As an additional exercise, I implemented a sales forecasting model using BigQuery ML (ARIMA_PLUS).
+As an additional exercise, I implemented a sales forecasting model using **BigQuery ML (ARIMA_PLUS)**.
 
-The model was trained using aggregated historical daily sales from the fct_orders table and generates a 30-day sales forecast.
+The model was trained using aggregated historical daily sales from the `fct_orders` table and generates a **30-day sales forecast**.
 
-Because the provided data ends in December 2026, the forecast predicts sales for January 2027.
+Because the provided data ends in **December 2026**, the forecast predicts sales for **January 2027**.
 
-The forecasted values are visualized in the dashboard alongside the historical sales trend
+The forecasted values are visualized in the dashboard alongside the historical sales trend to support business planning and decision-making.
+
+### Predictive Insights
+
+- The model forecasts an **average daily sales value of approximately €403** for January 2027.
+- The forecast provides the marketing team with an estimate of expected sales performance for the upcoming month
+- Comparing actual sales with forecasted values can help identify unusual demand patterns and evaluate the effectiveness of marketing campaigns
 
 ## Running the Project
 
